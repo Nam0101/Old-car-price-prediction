@@ -6,6 +6,21 @@ import time
 
 delay = 0.1
 
+def save_state(page_number, car_count):
+    with open("state.txt", "w") as f:
+        f.write(f"{page_number},{car_count[0]}")
+
+
+def load_state():
+    try:
+        with open("state.txt", "r") as f:
+            data = f.read().split(",")
+            page_number = int(data[0])
+            car_count = [int(data[1])]
+            return page_number, car_count
+    except FileNotFoundError:
+        return 2, [0]
+
 
 def craw(url, count):
     time.sleep(delay)
@@ -28,7 +43,7 @@ def craw(url, count):
         km = int(km_driver)
 
         retry_count = 0
-        while km == 0 and retry_count < 5:
+        while km < 500 and retry_count < 5:
             print("Re Crawling " + url)
             time.sleep(delay)
             r = requests.get(url)
@@ -49,6 +64,32 @@ def craw(url, count):
 
         num_of_door = div_tags[6].span.text.strip()
         num_of_seat = div_tags[7].span.text.strip()
+        num_dorr = num_of_door.split(" ")[0]
+        num_of_door = int(num_dorr)
+        num_seat = num_of_seat.split(" ")[0]
+        num_of_seat = int(num_seat)
+        if num_of_door == 0 or num_of_seat == 0:
+            # retry
+            retry_count = 0
+            while (num_of_door == 0 or num_of_seat == 0) and retry_count < 5:
+                print("Re Crawling " + url)
+                time.sleep(delay)
+                r = requests.get(url)
+                soup = BeautifulSoup(r.content, "html.parser")
+                div_title = soup.find("div", class_="title")
+                title = div_title.h1.text.strip()
+                car_price = title.split("-")[1]
+                div_tags = soup.find_all("div", class_=["txt_input", "inputbox"])
+                num_of_door = div_tags[6].span.text.strip()
+                num_of_seat = div_tags[7].span.text.strip()
+                num_dorr = num_of_door.split(" ")[0]
+                num_of_door = int(num_dorr)
+                num_seat = num_of_seat.split(" ")[0]
+                num_of_seat = int(num_seat)
+                retry_count += 1
+        if num_of_door == 0 or num_of_seat == 0:
+            print("Max retries reached. Skipping " + url)
+            return
         engine = div_tags[8].span.text.strip()
         # engine type is:Hybrid 1.8 L, split it into 2 parts
         engine_type = engine.split("\t")[0]
@@ -57,11 +98,12 @@ def craw(url, count):
         print("Error " + str(e))
         return
     count[0] += 1
-    with open("data.csv", "a", encoding="utf-8", newline="") as f:
+    with open("data.csv", "a+", encoding="utf-8", newline="") as f:
         csv_writer = csv.writer(f)
         csv_writer.writerow(
             [car_name, car_year, car_price, assemble, series, km, num_of_door, num_of_seat, engine_type,
-             transmission])
+             transmission,url])
+
 
 
 def get_all_url(url, count):
@@ -75,21 +117,31 @@ def get_all_url(url, count):
         try:
             craw(url, count)
         except Exception as e:
-            print("Error " + str(e))
+            # retry connection
+            print("Re Crawling Because connetion error" + url)
+            time.sleep(delay)
+            try:
+                craw(url, count)
+            except Exception as e:
+                print("Error " + str(e))
             continue
 
 
 if __name__ == '__main__':
-    car_count = [0]  # Using a list to store the count
+    page_number, car_count = load_state()
     main_url = "https://bonbanh.com/oto-cu-da-qua-su-dung/page,"
-    with open("data.csv", "w", encoding="utf-8", newline="") as f:
+    with open("data.csv", "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(
-            ["car_name", "year", "price", "assemble_place", "series", "km", "num_of_door", "num_of_seat", "engine_type",
-             "transmission"])
-    for i in range(2, 3):
+        if f.tell() == 0:
+            writer.writerow(
+                ["car_name", "year", "price", "assemble_place", "series", "km", "num_of_door", "num_of_seat",
+                 "engine_type", "transmission"])
+
+    for i in range(page_number, 1640):
         page_url = main_url + str(i)
         print("Crawling page " + str(i))
         get_all_url(page_url, car_count)
         print("Crawled car: " + str(car_count[0]))
+        save_state(i, car_count)
+
     print("Done!")
