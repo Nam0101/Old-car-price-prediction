@@ -28,7 +28,7 @@ def craw(url, count):
         km = int(km_driver)
 
         retry_count = 0
-        while km == 0 and retry_count < 5:
+        while km < 500 and retry_count < 5:
             print("Re Crawling " + url)
             time.sleep(delay)
             r = requests.get(url)
@@ -49,6 +49,29 @@ def craw(url, count):
 
         num_of_door = div_tags[6].span.text.strip()
         num_of_seat = div_tags[7].span.text.strip()
+        num_dorr = num_of_door.split(" ")[0]
+        num_of_door = int(num_dorr)
+        num_seat = num_of_seat.split(" ")[0]
+        num_of_seat = int(num_seat)
+        if num_of_door == 0 or num_of_seat == 0:
+            # retry
+            retry_count = 0
+            while (num_of_door == 0 or num_of_seat == 0) and retry_count < 5:
+                print("Re Crawling " + url)
+                time.sleep(delay)
+                r = requests.get(url)
+                soup = BeautifulSoup(r.content, "html.parser")
+                div_title = soup.find("div", class_="title")
+                title = div_title.h1.text.strip()
+                car_price = title.split("-")[1]
+                div_tags = soup.find_all("div", class_=["txt_input", "inputbox"])
+                num_of_door = div_tags[6].span.text.strip()
+                num_of_seat = div_tags[7].span.text.strip()
+                num_dorr = num_of_door.split(" ")[0]
+                num_of_door = int(num_dorr)
+                num_seat = num_of_seat.split(" ")[0]
+                num_of_seat = int(num_seat)
+                retry_count += 1
         engine = div_tags[8].span.text.strip()
         # engine type is:Hybrid 1.8 L, split it into 2 parts
         engine_type = engine.split("\t")[0]
@@ -88,7 +111,7 @@ if __name__ == '__main__':
         writer.writerow(
             ["car_name", "year", "price", "assemble_place", "series", "km", "num_of_door", "num_of_seat", "engine_type",
              "transmission"])
-    for i in range(2, 1640):
+    for i in range(2, 10):
         page_url = main_url + str(i)
         print("Crawling page " + str(i))
         get_all_url(page_url, car_count)
