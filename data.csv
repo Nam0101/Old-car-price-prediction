@@ -1,0 +1,32 @@
+car_name,year,price,assemble_place,series,km,num_of_door,num_of_seat,engine_type,transmission
+ Toyota Fortuner TRD Sportivo 4x4 AT,2016, 715 Triệu,1,SUV,"39,800 Km",5 cửa,8 chỗ,Xăng,Số tự động
+ Hyundai Tucson 2.0 AT CRDi Đặc biệt,2022, 1 Tỷ 60 Triệu,1,Crossover,"22,000 Km",5 cửa,5 chỗ,Dầu,Số tự động
+ Toyota Fortuner 2.7V 4X2 AT,2016, 605 Triệu,1,SUV,"79,800 Km",5 cửa,8 chỗ,Xăng,Số tự động
+ Mazda CX5 2.0 AT,2019, 685 Triệu,1,SUV,"80,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Toyota Fortuner 2.4G 4x2 AT,2021, 999 Triệu,1,SUV,"59,000 Km",5 cửa,7 chỗ,Dầu,Số tự động
+ Mazda BT50 4x4  Thái,2016, 408 Triệu,0,Bán tải / Pickup,"68,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz GLC 200,2020, 1 Tỷ 270 Triệu,1,SUV,"30,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz C class C300 AMG,2018, 1 Tỷ 139 Triệu,1,Sedan,"40,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz S class S450L,2018, 2 Tỷ 599 Triệu,1,Sedan,"37,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz GLE Class GLE 400 4Matic,2015, 1 Tỷ 499 Triệu,0,SUV,"80,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Toyota Corolla altis 1.8G MT,2008, 305 Triệu,1,Sedan,"154,000 Km",4 cửa,5 chỗ,Xăng,Số tay
+ Porsche Panamera 3.0 V6,2017, 4 Tỷ 655 Triệu,0,Sedan,"3,000 Km",4 cửa,4 chỗ,Xăng,Số tự động
+ Mercedes Benz E class E250,2018, 1 Tỷ 350 Triệu,1,Sedan,"40,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mazda 2 1.5 AT,2022, 445 Triệu,0,Sedan,"9,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Kia Morning Van 1.0 AT,2014, 219 Triệu,0,Van/Minivan,"10,000 Km",5 cửa,2 chỗ,Xăng,Số tự động
+ Mazda BT50 Luxury 2.2L 4x2 AT,2021, 515 Triệu,0,Bán tải / Pickup,"18,000 Km",4 cửa,5 chỗ,Dầu,Số tự động
+ Mazda CX5,2016, 545 Triệu,1,SUV,"66,000 Km",5 cửa,5 chỗ,-,-
+ Suzuki Swift 1.4 AT,2014, 305 Triệu,1,Hatchback,"72,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ LandRover Range Rover HSE 3.0,2015, 2 Tỷ 980 Triệu,0,SUV,"65,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Lexus ES 250 F Sport,2022, 2 Tỷ 690 Triệu,0,Sedan,800 Km,4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz GLC 300 4Matic,2020, 1 Tỷ 699 Triệu,1,SUV,"40,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Audi A4 1.8 TFSI,2016, 650 Triệu,0,Sedan,"78,600 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mazda CX5 2.0 AT,2018, 635 Triệu,1,SUV,"76,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Toyota Camry 2.0E,2018, 760 Triệu,1,Sedan,0 Km,4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz E class E300 AMG,2022, 2 Tỷ 288 Triệu,1,Sedan,"12,873 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Mercedes Benz GLC 200,2020, 1 Tỷ 450 Triệu,1,SUV,"15,000 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Toyota Yaris 1.3E,2014, 399 Triệu,0,Hatchback,"59,466 Km",5 cửa,5 chỗ,Xăng,Số tự động
+ Mazda 3,2019, 490 Triệu,1,Sedan,"48,000 Km",4 cửa,5 chỗ,-,-
+ BMW X1 sDrive18i,2018, 990 Triệu,0,SUV,0 Km,5 cửa,5 chỗ,Xăng,Số tự động
+ Kia Soluto 1.4 AT Deluxe,2019, 385 Triệu,1,Sedan,"60,000 Km",4 cửa,5 chỗ,Xăng,Số tự động
+ Nissan Navara VL 2.5 AT 4WD,2015, 495 Triệu,0,Bán tải / Pickup,"80,000 Km",4 cửa,5 chỗ,Dầu,Số tự động
