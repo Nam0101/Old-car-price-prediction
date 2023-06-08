@@ -88,7 +88,7 @@ if __name__ == '__main__':
         writer.writerow(
             ["car_name", "year", "price", "assemble_place", "series", "km", "num_of_door", "num_of_seat", "engine_type",
              "transmission"])
-    for i in range(2, 3):
+    for i in range(2, 1640):
         page_url = main_url + str(i)
         print("Crawling page " + str(i))
         get_all_url(page_url, car_count)
