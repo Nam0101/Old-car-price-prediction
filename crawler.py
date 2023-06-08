@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 
-delay = 0.01
+delay = 0.1
 
 
 def craw(url, count):
@@ -62,7 +62,6 @@ def craw(url, count):
         csv_writer.writerow(
             [car_name, car_year, car_price, assemble, series, km, num_of_door, num_of_seat, engine_type,
              transmission])
-
 
 
 def get_all_url(url, count):
