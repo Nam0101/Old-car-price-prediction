@@ -6,6 +6,7 @@ import time
 
 delay = 0.1
 
+
 def save_state(page_number, car_count):
     with open("state.txt", "w") as f:
         f.write(f"{page_number},{car_count[0]}")
@@ -102,8 +103,7 @@ def craw(url, count):
         csv_writer = csv.writer(f)
         csv_writer.writerow(
             [car_name, car_year, car_price, assemble, series, km, num_of_door, num_of_seat, engine_type,
-             transmission,url])
-
+             transmission, url])
 
 
 def get_all_url(url, count):
