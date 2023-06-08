@@ -44,7 +44,7 @@ def craw(url, count):
         km = int(km_driver)
 
         retry_count = 0
-        while km < 500 and retry_count < 5:
+        while km < 500 and retry_count < 2:
             print("Re Crawling " + url)
             time.sleep(delay)
             r = requests.get(url)
@@ -72,7 +72,7 @@ def craw(url, count):
         if num_of_door == 0 or num_of_seat == 0:
             # retry
             retry_count = 0
-            while (num_of_door == 0 or num_of_seat == 0) and retry_count < 5:
+            while (num_of_door == 0 or num_of_seat == 0) and retry_count < 2:
                 print("Re Crawling " + url)
                 time.sleep(delay)
                 r = requests.get(url)
