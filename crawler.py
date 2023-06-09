@@ -99,7 +99,7 @@ def craw(url, count):
         print("Error " + str(e))
         return
     count[0] += 1
-    with open("data.csv", "a+", encoding="utf-8", newline="") as f:
+    with open("data/data.csv", "a+", encoding="utf-8", newline="") as f:
         csv_writer = csv.writer(f)
         csv_writer.writerow(
             [car_name, car_year, car_price, assemble, series, km, num_of_door, num_of_seat, engine_type,
@@ -130,7 +130,7 @@ def get_all_url(url, count):
 if __name__ == '__main__':
     page_number, car_count = load_state()
     main_url = "https://bonbanh.com/oto-cu-da-qua-su-dung/page,"
-    with open("data.csv", "a", encoding="utf-8", newline="") as f:
+    with open("data/data.csv", "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         if f.tell() == 0:
             writer.writerow(
