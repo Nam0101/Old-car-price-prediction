@@ -6173,8 +6173,8 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Hyundai Tucson 2.0 ATH,2020, 775 Triệu,Lắp ráp trong nước,Crossover,35000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-hyundai-tucson-2.0-ath-2020-5029293
  Honda CRV 2.4 AT,2012, 425 Triệu,Lắp ráp trong nước,SUV,70000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-honda-crv-2.4-at-2012-4927678
  Mercedes Benz E class E200 Exclusive,2021, 1 Tỷ 858 Triệu,Lắp ráp trong nước,Sedan,18000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mercedes_benz-e_class-e200-exclusive-2021-4905479
-<<<<<<< HEAD
-=======
+<<<<<<< HEAD,,,,,,,,,,
+=======,,,,,,,,,,
  Mercedes Benz E class E200,2017, 1 Tỷ 190 Triệu,Lắp ráp trong nước,Sedan,35000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mercedes_benz-e_class-e200-2017-4642167
  LandRover Range Rover HSE 3.0,2016, 4 Tỷ 250 Triệu,Nhập khẩu,SUV,45000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-landrover-range_rover-hse-3.0-2016-4881174
  Toyota Rush 1.5S AT,2018, 539 Triệu,Nhập khẩu,SUV,46000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-toyota-rush-1.5s-at-2018-4917902
@@ -6214,7 +6214,7 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Lexus RX 300,2022, 3 Tỷ 199 Triệu,Nhập khẩu,SUV,8800,5,5,Xăng,Số tự động,https://bonbanh.com/xe-lexus-rx-300-2022-4999210
  Kia Morning Luxury,2019, 339 Triệu,Lắp ráp trong nước,Hatchback,10000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-morning-luxury-2019-5020939
  Ford Fiesta Titanium 1.5 AT,2017, 359 Triệu,Lắp ráp trong nước,Sedan,50000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-ford-fiesta-titanium-1.5-at-2017-4939208
->>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe
+>>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe,,,,,,,,,,
  Kia Carnival Signature 2.2D,2022, 1 Tỷ 530 Triệu,Lắp ráp trong nước,Van/Minivan,22000,5,7,Dầu,Số tự động,https://bonbanh.com/xe-kia-carnival-signature-2.2d-2022-4971144
  Toyota Camry 2.0G,2019, 850 Triệu,Nhập khẩu,Sedan,20150,4,5,Xăng,Số tự động,https://bonbanh.com/xe-toyota-camry-2.0g-2019-5029348
  Mazda 3 Luxury,2020, 555 Triệu,Lắp ráp trong nước,Sedan,10000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mazda-3-luxury-2020-4865817
@@ -6233,11 +6233,11 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Hyundai Tucson 2.0 ATH,2019, 730 Triệu,Lắp ráp trong nước,Crossover,49000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-hyundai-tucson-2.0-ath-2019-4880721
  Kia Cerato 1.6 AT Luxury,2019, 499 Triệu,Lắp ráp trong nước,Sedan,55555,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-cerato-1.6-at-luxury-2019-5017430
  MG 5 Luxury 1.5 AT,2022, 470 Triệu,Nhập khẩu,Sedan,26789,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mg-5-luxury-1.5-at-2022-5025376
-<<<<<<< HEAD
+<<<<<<< HEAD,,,,,,,,,,
  Kia Cerato 1.6 AT Luxury,2019, 499 Triệu,Lắp ráp trong nước,Sedan,55555,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-cerato-1.6-at-luxury-2019-5017430
  MG 5 Luxury 1.5 AT,2022, 470 Triệu,Nhập khẩu,Sedan,26789,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mg-5-luxury-1.5-at-2022-5025376
-=======
->>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe
+=======,,,,,,,,,,
+>>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe,,,,,,,,,,
  Hyundai Kona 2.0 ATH,2018, 410 Triệu,Lắp ráp trong nước,Crossover,20000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-hyundai-kona-2.0-ath-2018-5029344
  Mercedes Benz GLC 300 4Matic,2022, 2 Tỷ 570 Triệu,Lắp ráp trong nước,SUV,100,5,5,Xăng,Số tự động,https://bonbanh.com/xe-mercedes_benz-glc-300-4matic-2022-4772507
  Kia Morning Si AT,2016, 269 Triệu,Lắp ráp trong nước,Hatchback,34000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-morning-si-at-2016-4979515
@@ -6246,17 +6246,17 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Mazda 3 1.5 AT,2015, 380 Triệu,Lắp ráp trong nước,Sedan,80000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mazda-3-1.5-at-2015-5025462
  Suzuki Ertiga GLX 1.5 AT,2019, 445 Triệu,Nhập khẩu,SUV,60000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-suzuki-ertiga-glx-1.5-at-2019-5016507
  Hyundai i20 Active 1.4 AT,2016, 415 Triệu,Nhập khẩu,Crossover,63000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-hyundai-i20-active-1.4-at-2016-4979348
-<<<<<<< HEAD
+<<<<<<< HEAD,,,,,,,,,,
  Mazda CX5 2.5 AT 2WD,2018, 725 Triệu,Lắp ráp trong nước,SUV,60000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-mazda-cx5-2.5-at-2wd-2018-4941012
  Toyota Sienna LE 3.5,2008, 450 Triệu,Nhập khẩu,Van/Minivan,65000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-toyota-sienna-le-3.5-2008-5024738
  Kia Cerato 2.0 AT Premium,2020, 588 Triệu,Lắp ráp trong nước,Sedan,49000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-cerato-2.0-at-premium-2020-4607529
  Mitsubishi Pajero Sport G 4x2 AT,2014, 440 Triệu,Lắp ráp trong nước,SUV,90000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-mitsubishi-pajero-sport-g-4x2-at-2014-4895737
  Ford Ranger Wildtrak 3.2L 4x4 AT,2016, 670 Triệu,Nhập khẩu,Bán tải / Pickup,63000,4,5,Dầu,Số tự động,https://bonbanh.com/xe-ford-ranger-wildtrak-3.2l-4x4-at-2016-4975069
  Honda CRV 2.4 AT,2012, 425 Triệu,Lắp ráp trong nước,SUV,70000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-honda-crv-2.4-at-2012-4927678
-=======
+=======,,,,,,,,,,
  Kia Cerato 2.0 AT Premium,2020, 588 Triệu,Lắp ráp trong nước,Sedan,49000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-cerato-2.0-at-premium-2020-4607529
  Ford Ranger Wildtrak 3.2L 4x4 AT,2016, 670 Triệu,Nhập khẩu,Bán tải / Pickup,63000,4,5,Dầu,Số tự động,https://bonbanh.com/xe-ford-ranger-wildtrak-3.2l-4x4-at-2016-4975069
->>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe
+>>>>>>> 2735ab8aba18e2f324203b3871653a73b0101cfe,,,,,,,,,,
  Mercedes Benz E class E200 Exclusive,2021, 1 Tỷ 858 Triệu,Lắp ráp trong nước,Sedan,18000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-mercedes_benz-e_class-e200-exclusive-2021-4905479
  BMW 3 Series 320i,2016, 750 Triệu,Nhập khẩu,Sedan,40000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-bmw-3_series-320i-2016-5025887
  Hyundai Tucson 2.0 ATH,2020, 775 Triệu,Lắp ráp trong nước,Crossover,35000,5,5,Xăng,Số tự động,https://bonbanh.com/xe-hyundai-tucson-2.0-ath-2020-5029293
@@ -6309,8 +6309,8 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Lexus GX 460,2011, 1 Tỷ 900 Triệu,Nhập khẩu,SUV,110000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-lexus-gx-460-2011-4847094
  Chevrolet Colorado High Country 2.5L 4x4 AT,2019, 525 Triệu,Nhập khẩu,Bán tải / Pickup,45000,4,5,Dầu,Số tự động,https://bonbanh.com/xe-chevrolet-colorado-high-country-2.5l-4x4-at-2019-5015415
  Toyota Land Cruiser GX 4.5,2005, 499 Triệu,Lắp ráp trong nước,SUV,105000,5,8,Xăng,Số tay,https://bonbanh.com/xe-toyota-land_cruiser-gx-4.5-2005-4736485
-<<<<<<< HEAD
-=======
+<<<<<<< HEAD,,,,,,,,,,
+=======,,,,,,,,,,
  Mercedes Benz MB 100,2002, 139 Triệu,Lắp ráp trong nước,Van/Minivan,15000,4,9,Xăng,Số tay,https://bonbanh.com/xe-mercedes_benz-mb-100-2002-4998469
  Hyundai i10 Grand 1.2 MT,2019, 285 Triệu,Lắp ráp trong nước,Hatchback,5200,5,5,Xăng,Số tay,https://bonbanh.com/xe-hyundai-i10-grand-1.2-mt-2019-4995180
  Mercedes Benz GLS 450 4Matic,2021, 4 Tỷ 378 Triệu,Nhập khẩu,SUV,16000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-mercedes_benz-gls-450-4matic-2021-5014201
@@ -13562,7 +13562,6 @@ car_name,year,price,assemble_place,series,driven kms,num_of_door,num_of_seat,eng
  Kia Sorento Signature 2.2 AT AWD,2021, 1 Tỷ 65 Triệu,Lắp ráp trong nước,SUV,32000,5,7,Dầu,Số tự động,https://bonbanh.com/xe-kia-sorento-signature-2.2-at-awd-2021-4942827
  Toyota Alphard Executive Lounge,2019, 3 Tỷ 370 Triệu,Nhập khẩu,Van/Minivan,35000,5,7,Xăng,Số tự động,https://bonbanh.com/xe-toyota-alphard-executive-lounge-2019-5019831
  Kia Sorento DATH,2017, 690 Triệu,Lắp ráp trong nước,SUV,61000,5,7,Dầu,Số tự động,https://bonbanh.com/xe-kia-sorento-dath-2017-5023785
- BMW Z4 sDrive30i M Sport,2021, 2 Tỷ 950 Triệu,Nhập khẩu,Convertible/Cabriolet,10000,2,2,Xăng,Số tự động,https://bonbanh.com/xe-bmw-z4-sdrive30i-m-sport-2021-4985921 Toyota Vios 1.5G,2010, 310 Triệu,Lắp ráp trong nước,Sedan,120000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-toyota-vios-1.5g-2010-4904139
  Ford Ranger XLT 2.5L 4x4 MT,2010, 270 Triệu,Nhập khẩu,Bán tải / Pickup,200000,4,5,Dầu,Số tay,https://bonbanh.com/xe-ford-ranger-xlt-2.5l-4x4-mt-2010-4762891
  Kia Soluto 1.4 AT Deluxe,2020, 410 Triệu,Lắp ráp trong nước,Sedan,35,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-soluto-1.4-at-deluxe-2020-4996804
  Kia K3 1.6 AT,2015, 389 Triệu,Lắp ráp trong nước,Sedan,8000,4,5,Xăng,Số tự động,https://bonbanh.com/xe-kia-k3-1.6-at-2015-4979344
