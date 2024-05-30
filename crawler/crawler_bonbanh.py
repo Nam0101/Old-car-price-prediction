@@ -6,9 +6,9 @@ from threading import Thread, Lock, Event
 import queue
 
 # Constants
-DELAY = 0.05
-NUM_THREADS = 10
-MAX_PAGES = 2  # Adjust as needed
+DELAY = 1.05
+NUM_THREADS = 5
+MAX_PAGES = 1342  # Adjust as needed
 DATA_FILE = "crawler/data_bonbanh.csv"
 BASE_URL = "https://bonbanh.com/oto-cu-da-qua-su-dung/page,"
 
@@ -25,7 +25,6 @@ def craw(url):
     global last_crawled_url
     time.sleep(DELAY)
     r = requests.get(url)
-    print(url)
 
     try:
         soup = BeautifulSoup(r.content, "html.parser")
