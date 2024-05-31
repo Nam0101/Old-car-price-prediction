@@ -8,8 +8,8 @@ import queue
 # Constants
 DELAY = 1.05
 NUM_THREADS = 5
-MAX_PAGES = 1342  # Adjust as needed
-DATA_FILE = "crawler/data_bonbanh.csv"
+MAX_PAGES = 2  # Adjust as needed
+DATA_FILE = "data_bonbanh.csv"
 BASE_URL = "https://bonbanh.com/oto-cu-da-qua-su-dung/page,"
 
 # Global variables

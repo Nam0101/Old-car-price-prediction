@@ -3,13 +3,15 @@ import pickle
 import pandas as pd
 from category_encoders import TargetEncoder, JamesSteinEncoder
 from sklearn.preprocessing import OneHotEncoder
+from flask_cors import CORS
 
-# Load the model
-model = pickle.load(open('finalized_model.pkl', 'rb'))
-data = pd.read_csv('data/data.csv')
+
 # Initialize the Flask API
 app = Flask(__name__)
+CORS(app)
 
+# Global variables for data and encoders
+data = pd.read_csv('data/data.csv')
 one_hot = OneHotEncoder()
 target_enc = TargetEncoder()
 js_enc = JamesSteinEncoder()
@@ -23,7 +25,6 @@ transmission_enc = OneHotEncoder()
 transmission_enc.fit(data['transmission'].values.reshape(-1, 1))
 assemble_place_enc = OneHotEncoder()
 assemble_place_enc.fit(data['assemble_place'].values.reshape(-1, 1))
-
 one_hot_engine_type = pd.get_dummies(data['engine_type'], prefix='engine_type')
 
 
@@ -72,6 +73,7 @@ def convert_to_vnd(price):
 # Create the API route
 @app.route('/predict', methods=['POST'])
 def predict():
+    model = pickle.load(open('finalized_model.pkl', 'rb'))
     req = request.get_json()
     df = pd.DataFrame([req])
     df = process(df)

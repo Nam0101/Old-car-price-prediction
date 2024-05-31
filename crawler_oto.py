@@ -4,6 +4,7 @@ import csv
 
 URL = 'https://oto.com.vn/'
 
+
 def crawler(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -50,7 +51,8 @@ def save_to_file(data, filename, header=True):  # Default header to True
     with open(filename, 'a', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         if header:  # Write header only if header is True
-            writer.writerow(['car_name', 'year', 'price', 'assemble_place', 'series', 'km', 'engine_type', 'transmission', 'url'])
+            writer.writerow(
+                ['car_name', 'year', 'price', 'assemble_place', 'series', 'km', 'engine_type', 'transmission', 'url'])
         writer.writerows(data)
     print(f"Dữ liệu đã được lưu vào file {filename}")
 
@@ -59,7 +61,7 @@ def craw():
     save_to_file([], 'data_oto.csv')  # Call save_to_file with header=True (default)
 
     count = 0
-    for i in range(1, 1000):
+    for i in range(1, 3):
         if i == 1:
             url = URL + 'mua-ban-xe'
         else:
