@@ -58,6 +58,17 @@ def process(df):
     return temp_df
 
 
+def convert_to_vnd(price):
+    if price >= 1_000_000_000:
+        billions = price // 1_000_000_000
+        millions = (price % 1_000_000_000) // 1_000_000
+        return f"{billions} tỷ {millions} triệu"
+    elif price >= 1_000_000:
+        return f"{price // 1_000_000} triệu"
+    else:
+        return f"{price} đồng"
+
+
 # Create the API route
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -66,34 +77,40 @@ def predict():
     df = process(df)
     df = df[['year', 'assemble_place', 'series', 'km', 'transmission', 'brand', 'model', 'engine_type_Dầu',
              'engine_type_Hybrid', 'engine_type_Xăng', 'engine_type_Điện']]
-    prediction = model.predict(df)
+    prediction = model.predict(df)[0]
     print(prediction.tolist())
-    return jsonify({'price': prediction.tolist()})
+    low_price = prediction * 0.9
+    high_price = prediction * 1.1
+    prediction = convert_to_vnd(prediction)
+    low_price = convert_to_vnd(low_price)
+    high_price = convert_to_vnd(high_price)
+
+    return jsonify({'price': prediction, 'low_price': low_price, 'high_price': high_price})
 
 
 @app.route('/brands', methods=['GET'])
 def brands():
-    return jsonify(data['brand'].unique().tolist())
+    return jsonify(data['brand'].dropna().unique().tolist())
 
 
 @app.route('/models', methods=['GET'])
 def models():
-    return jsonify(data['model'].unique().tolist())
+    return jsonify(data['model'].dropna().unique().tolist())
 
 
 @app.route('/series', methods=['GET'])
 def series():
-    return jsonify(data['series'].unique().tolist())
+    return jsonify(data['series'].dropna().unique().tolist())
 
 
 @app.route('/engine_types', methods=['GET'])
 def engine_types():
-    return jsonify(data['engine_type'].unique().tolist())
+    return jsonify(data['engine_type'].dropna().unique().tolist())
 
 
 @app.route('/transmissions', methods=['GET'])
 def transmissions():
-    return jsonify(data['transmission'].unique().tolist())
+    return jsonify(data['transmission'].dropna().unique().tolist())
 
 
 if __name__ == '__main__':
