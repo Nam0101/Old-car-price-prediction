@@ -1,10 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import pickle
 import pandas as pd
 from category_encoders import TargetEncoder, JamesSteinEncoder
 from sklearn.preprocessing import OneHotEncoder
 from flask_cors import CORS
-
 
 # Initialize the Flask API
 app = Flask(__name__)

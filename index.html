@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Information Form</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-header text-center">
+          <h2>Car Information Form</h2>
+        </div>
+        <div class="card-body mt-4">
+          <form id="carForm">
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="kilometers">Năm sản xuất</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="year"
+                  placeholder="Nhập năm sản xuất..."
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="origin">Xuất xứ</label>
+                <select id="origin" class="form-control">
+                  <option selected>Chọn xuất xứ...</option>
+                  <option>Trong nước</option>
+                  <option>Nhập khẩu</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="bodyType">Kiểu dáng</label>
+                <select id="bodyType" class="form-control">
+                  <option selected>Chọn kiểu dáng...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="kilometers">Km đã đi</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="kilometers"
+                  placeholder="Nhập số km"
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="fuelType">Nhiên liệu</label>
+                <select id="fuelType" class="form-control">
+                  <option selected>Chọn nhiên liệu...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="transmission">Hộp số</label>
+                <select id="transmission" class="form-control">
+                  <option selected>Chọn hộp số...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="brand">Thương hiệu</label>
+                <select id="brand" class="form-control">
+                  <option selected>Chọn thương hiệu...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="models">Model</label>
+                <select id="models" class="form-control">
+                  <option selected>Chọn model...</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-5">
+              Gửi
+            </button>
+          </form>
+        </div>
+        <div class="card-footer mt-3">
+          <div id="result" class="my-4 d-flex align-items-center">
+            <h3 class="m-0" id="price">Giá dự kiến:</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

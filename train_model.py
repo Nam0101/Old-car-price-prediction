@@ -110,7 +110,7 @@ def train_model():
 
 def main():
     model = train_model()
-    with open('model.pkl', 'wb') as model_file:
+    with open('finalized_model.pkl', 'wb') as model_file:
         pickle.dump(model, model_file)
 
 
