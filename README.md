@@ -10,7 +10,7 @@ Cách cài đặt repo trên máy:
 2. Khởi chạy môi trườnng ảo
     ```bash
     python3 -m venv venv
-    source venv/bin/activate
+    venv\Scripts\activate
     ```
 3. Cài đặt các thư viện cần thiết
     ```bash

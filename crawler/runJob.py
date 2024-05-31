@@ -1,15 +1,16 @@
-import schedule
-import time
-from crawler_bonbanh import main  # replace with your actual import
+from apscheduler.schedulers.blocking import BlockingScheduler
 
 
-def job():
-    main()
+def job_function():
+    # Đây là nơi bạn đặt mã để thực hiện công việc của bạn
+    print("Hello World")
 
 
-if __name__ == "__main__":
-    schedule.every(10).seconds.do(job)
-    while True:
-        # Run pending jobs
-        schedule.run_pending()
-        time.sleep(1)
+# Khởi tạo một lịch trình
+scheduler = BlockingScheduler()
+
+# Thêm công việc vào lịch trình để chạy mỗi tuần vào thứ 2 lúc 10:00
+scheduler.add_job(job_function, 'cron', day_of_week='mon', hour=10)
+
+# Bắt đầu lịch trình
+scheduler.start()
